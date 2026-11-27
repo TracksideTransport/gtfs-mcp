@@ -219,7 +219,7 @@ jobs:
           node-version: 24
       - name: Publish gtfs-mcp to npmjs.org when this version is new
         run: bash scripts/publish-npm.sh
-      - name: Publish @sohampatwardhan/gtfs-mcp to GitHub Packages when this version is new
+      - name: Publish @tracksidetransport/gtfs-mcp to GitHub Packages when this version is new
         env:
           NODE_AUTH_TOKEN: ${{ github.token }}
         run: bash scripts/publish-github-packages.sh

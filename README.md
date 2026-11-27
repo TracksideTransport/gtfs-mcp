@@ -250,15 +250,15 @@ The installers are `scripts/install.sh` and `scripts/install.ps1`. `GTFS_MCP_VER
 
 The npm package has no install scripts, so `npx --ignore-scripts` still works. On first run it downloads the archive for its own version from GitHub Releases, checks `sha256sums.txt`, and caches the binary. Later runs use the cache.
 
-The same launcher is also published as `@sohampatwardhan/gtfs-mcp` on GitHub Packages. `npx -y gtfs-mcp` on npmjs.org stays the usual install. To use the scoped package, point the scope at GitHub Packages in `.npmrc`. That registry needs a GitHub token with `read:packages`:
+The same launcher is also published as `@tracksidetransport/gtfs-mcp` on GitHub Packages. `npx -y gtfs-mcp` on npmjs.org stays the usual install. To use the scoped package, point the scope at GitHub Packages in `.npmrc`. That registry needs a GitHub token with `read:packages`:
 
 ```text
-@sohampatwardhan:registry=https://npm.pkg.github.com
+@tracksidetransport:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
 ```bash
-npx -y @sohampatwardhan/gtfs-mcp --version
+npx -y @tracksidetransport/gtfs-mcp --version
 ```
 
 ## Why Rust

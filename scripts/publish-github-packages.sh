@@ -12,7 +12,7 @@ if [[ -z "${NODE_AUTH_TOKEN:-}" ]]; then
 fi
 
 version=$(sed -n 's/^version = "\([0-9][0-9]*\.[0-9][0-9]*\.[0-9][0-9]*\)"$/\1/p' Cargo.toml | head -n 1)
-name="@sohampatwardhan/gtfs-mcp"
+name="@tracksidetransport/gtfs-mcp"
 registry="https://npm.pkg.github.com"
 
 workdir=$(mktemp -d)
@@ -25,7 +25,7 @@ trap cleanup EXIT
 
 # Do not set always-auth. npm expands ${NODE_AUTH_TOKEN} from the environment.
 cat > "$npmrc" <<'EOF'
-@sohampatwardhan:registry=https://npm.pkg.github.com
+@tracksidetransport:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
 EOF
 export NPM_CONFIG_USERCONFIG="$npmrc"
@@ -41,7 +41,7 @@ if data.get("name") != "gtfs-mcp":
     raise SystemExit(f"refusing to rewrite a package named {data.get('name')}")
 if data.get("version") != version:
     raise SystemExit(f"package version {data.get('version')} != Cargo.toml {version}")
-data["name"] = "@sohampatwardhan/gtfs-mcp"
+data["name"] = "@tracksidetransport/gtfs-mcp"
 data["repository"] = {
     "type": "git",
     "url": "https://github.com/TracksideTransport/gtfs-mcp",

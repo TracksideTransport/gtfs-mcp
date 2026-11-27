@@ -229,13 +229,13 @@ cargo install gtfs-mcp --locked
 
 Release archives and installers are on the [GitHub Releases](https://github.com/TracksideTransport/gtfs-mcp/releases) page. `GTFS_MCP_BINARY=/path/to/gtfs-mcp` uses that binary instead of the downloaded one.
 
-The same launcher is published as `@sohampatwardhan/gtfs-mcp` on GitHub Packages. `npx -y gtfs-mcp` on npmjs.org is the usual install. To use the scoped package, add this to `.npmrc` (the token needs `read:packages`):
+The same launcher is published as `@tracksidetransport/gtfs-mcp` on GitHub Packages. `npx -y gtfs-mcp` on npmjs.org is the usual install. To use the scoped package, add this to `.npmrc` (the token needs `read:packages`):
 
 ```text
-@sohampatwardhan:registry=https://npm.pkg.github.com
+@tracksidetransport:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
 ```bash
-npx -y @sohampatwardhan/gtfs-mcp --version
+npx -y @tracksidetransport/gtfs-mcp --version
 ```
