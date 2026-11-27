@@ -17,7 +17,7 @@ if [[ -z "$version" ]]; then
   exit 1
 fi
 
-ua="gtfs-mcp (${version}; +https://github.com/sohampatwardhan/gtfs-mcp)"
+ua="gtfs-mcp (${version}; +https://github.com/TracksideTransport/gtfs-mcp)"
 
 version_on_index() {
   local code

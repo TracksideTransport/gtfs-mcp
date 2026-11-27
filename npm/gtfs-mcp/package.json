@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sohampatwardhan/gtfs-mcp"
+    "url": "https://github.com/TracksideTransport/gtfs-mcp"
   },
-  "homepage": "https://github.com/sohampatwardhan/gtfs-mcp#readme",
+  "homepage": "https://github.com/TracksideTransport/gtfs-mcp#readme",
   "bin": {
     "gtfs-mcp": "bin/gtfs-mcp.js"
   },

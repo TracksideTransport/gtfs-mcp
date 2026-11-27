@@ -39,7 +39,7 @@ test("maps each supported platform to a release archive", () => {
 test("release URLs use the package version", () => {
   assert.equal(
     releaseAssetUrl("0.3.0", "sha256sums.txt"),
-    "https://github.com/sohampatwardhan/gtfs-mcp/releases/download/v0.3.0/sha256sums.txt",
+    "https://github.com/TracksideTransport/gtfs-mcp/releases/download/v0.3.0/sha256sums.txt",
   );
 });
 
@@ -70,7 +70,7 @@ test("HTTPS_PROXY is skipped for NO_PROXY hosts", () => {
   };
   assert.equal(proxyFor("https://example.com/gtfs.zip", env), "");
   assert.equal(
-    proxyFor("https://github.com/sohampatwardhan/gtfs-mcp/releases/download/v0.3.0/sha256sums.txt", env),
+    proxyFor("https://github.com/TracksideTransport/gtfs-mcp/releases/download/v0.3.0/sha256sums.txt", env),
     "http://proxy.example:8080",
   );
   assert.equal(proxyFor("https://github.com/file", {}), "");

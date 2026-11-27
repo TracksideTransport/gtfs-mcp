@@ -9,7 +9,7 @@ const path = require("path");
 const zlib = require("zlib");
 const { URL } = require("url");
 
-const REPO = "sohampatwardhan/gtfs-mcp";
+const REPO = "TracksideTransport/gtfs-mcp";
 
 const TARGETS = {
   "linux-x64": {

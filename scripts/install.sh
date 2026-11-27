@@ -4,7 +4,7 @@
 # PREFIX defaults to $HOME/.local (the binary is placed in $PREFIX/bin).
 set -eu
 
-repo="sohampatwardhan/gtfs-mcp"
+repo="TracksideTransport/gtfs-mcp"
 version="${GTFS_MCP_VERSION:-}"
 if [ -z "$version" ]; then
   base="https://github.com/${repo}/releases/latest/download"

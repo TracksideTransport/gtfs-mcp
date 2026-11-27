@@ -4,7 +4,7 @@
 [![crates.io](https://img.shields.io/crates/v/gtfs-mcp)](https://crates.io/crates/gtfs-mcp)
 [![docs.rs](https://docs.rs/gtfs-mcp/badge.svg)](https://docs.rs/gtfs-mcp)
 
-MCP server for GTFS static schedules and optional GTFS-Realtime feeds. The current release is 0.3.0. Source and the full guide: https://github.com/sohampatwardhan/gtfs-mcp
+MCP server for GTFS static schedules and optional GTFS-Realtime feeds. The current release is 0.3.0. Source and the full guide: https://github.com/TracksideTransport/gtfs-mcp
 
 ## Install as an MCP server
 
@@ -227,7 +227,7 @@ url = "http://127.0.0.1:8091/mcp"
 cargo install gtfs-mcp --locked
 ```
 
-Release archives and installers are on the [GitHub Releases](https://github.com/sohampatwardhan/gtfs-mcp/releases) page. `GTFS_MCP_BINARY=/path/to/gtfs-mcp` uses that binary instead of the downloaded one.
+Release archives and installers are on the [GitHub Releases](https://github.com/TracksideTransport/gtfs-mcp/releases) page. `GTFS_MCP_BINARY=/path/to/gtfs-mcp` uses that binary instead of the downloaded one.
 
 The same launcher is published as `@sohampatwardhan/gtfs-mcp` on GitHub Packages. `npx -y gtfs-mcp` on npmjs.org is the usual install. To use the scoped package, add this to `.npmrc` (the token needs `read:packages`):
 

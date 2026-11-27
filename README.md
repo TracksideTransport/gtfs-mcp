@@ -237,11 +237,11 @@ GitHub Releases for tag `vX.Y.Z` ship linux x86_64 and aarch64 (musl), macOS x86
 
 ```bash
 curl --proto '=https' --tlsv1.2 -fsSL \
-  https://github.com/sohampatwardhan/gtfs-mcp/releases/latest/download/gtfs-mcp-installer.sh | sh
+  https://github.com/TracksideTransport/gtfs-mcp/releases/latest/download/gtfs-mcp-installer.sh | sh
 ```
 
 ```powershell
-irm https://github.com/sohampatwardhan/gtfs-mcp/releases/latest/download/gtfs-mcp-installer.ps1 | iex
+irm https://github.com/TracksideTransport/gtfs-mcp/releases/latest/download/gtfs-mcp-installer.ps1 | iex
 ```
 
 The installers are `scripts/install.sh` and `scripts/install.ps1`. `GTFS_MCP_VERSION=0.3.0` selects a release. `PREFIX` sets the install directory (the default is `~/.local` on Unix and `%LOCALAPPDATA%\gtfs-mcp` on Windows). A Homebrew tap is not part of this release.

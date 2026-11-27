@@ -3,7 +3,7 @@
 # $env:PREFIX defaults to $env:LOCALAPPDATA\gtfs-mcp (the exe is placed in that directory).
 $ErrorActionPreference = "Stop"
 
-$repo = "sohampatwardhan/gtfs-mcp"
+$repo = "TracksideTransport/gtfs-mcp"
 $version = $env:GTFS_MCP_VERSION
 if ([string]::IsNullOrWhiteSpace($version)) {
     $base = "https://github.com/$repo/releases/latest/download"

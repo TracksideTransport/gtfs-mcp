@@ -44,7 +44,7 @@ if data.get("version") != version:
 data["name"] = "@sohampatwardhan/gtfs-mcp"
 data["repository"] = {
     "type": "git",
-    "url": "https://github.com/sohampatwardhan/gtfs-mcp",
+    "url": "https://github.com/TracksideTransport/gtfs-mcp",
 }
 data["publishConfig"] = {"registry": "https://npm.pkg.github.com"}
 data.pop("optionalDependencies", None)

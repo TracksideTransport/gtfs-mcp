@@ -12,7 +12,7 @@ This version renames the project from `gtfs-rt-mcp` to `gtfs-mcp` and simplifies
 
 - The crate, binary, MCP server name, and npm package are `gtfs-mcp`. The library crate is `gtfs_mcp`.
 - Environment variables use the `GTFS_MCP_` prefix. `GTFS_MCP_STATIC` is required. Realtime URLs are optional.
-- The repository is https://github.com/sohampatwardhan/gtfs-mcp
+- The repository is https://github.com/TracksideTransport/gtfs-mcp
 
 Startup configuration is one static GTFS feed. `GTFS_MCP_STATIC` (or `--static`) is required. Optional realtime feeds are `GTFS_MCP_TRIP_UPDATES`, `GTFS_MCP_VEHICLE_POSITIONS`, and `GTFS_MCP_ALERTS`.
 
